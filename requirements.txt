@@ -1,3 +1,5 @@
 python-telegram-bot
 pytesseract
+tesseract-ocr
+ffmpeg
 git+git://github.com/madmaze/pytesseract.git
