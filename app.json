@@ -1,3 +1,4 @@
 {
+   "name": "OCR-Bot"
    "stack": "heroku-16"
-}
+
