@@ -5,6 +5,4 @@
     "BOT_TOKEN": {
       "description": "You bot token",
       "value": ""
-    }
-  }
 }
