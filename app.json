@@ -9,6 +9,9 @@
   "buildpacks": [
     {
       "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/madmaze/pytesseract.git"
     }
   ]
 }
