@@ -11,7 +11,7 @@
       "url": "heroku/python"
     },
     {
-      "url": "https://github.com/madmaze/pytesseract"
+      "url": "https://github.com/samadii/heroku-buildpack-tesseract"
     }
   ]
 }
