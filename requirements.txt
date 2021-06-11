@@ -3,4 +3,3 @@ pytesseract
 tesseract
 tesseract-ocr
 -f git+git://github.com/madmaze/pytesseract.git
-
