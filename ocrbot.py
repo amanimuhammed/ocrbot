@@ -41,7 +41,6 @@ def read_image(update: Update, context: CallbackContext) -> None:
         photo_file = update.message.photo[-1].get_file()
         img_name = str(chat_id)+'.jpg'
         photo_file.download(img_name)
-        pytesseract.pytesseract.tesseract_cmd = "/app/.apt/usr/share/tesseract-ocr/4.1.1/tessdata"
         output=pytesseract.image_to_string(Image.open(img_name))
         if output:
             update.message.reply_text('`'+str(output)+'`\n\nImage to Text Generated using @imagereaderbot', parse_mode=ParseMode.MARKDOWN, reply_to_message_id = update.message.message_id)
