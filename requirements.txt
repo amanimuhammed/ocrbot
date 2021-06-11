@@ -1,4 +1,6 @@
 python-telegram-bot
 pytesseract
-git+git://github.com/madmaze/pytesseract.git
-git+https://github.com/samadii/heroku-buildpack-tesseract
+tesseract
+tesseract-ocr
+-f git+git://github.com/madmaze/pytesseract.git
+
