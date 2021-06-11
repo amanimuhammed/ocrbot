@@ -1,9 +1,14 @@
 {
   "name": "OCR-Bot",
+  "stack": "heroku-18",
   "env": {
     "BOT_TOKEN": {
       "description": "You bot token",
       "value": ""
+  },
+    "TESSDATA_PREFIX": {
+      "description": "don't edit this",
+      "value": "/app/.apt/usr/share/tesseract-ocr/4.1.1/tessdata"
 }
   },
   "buildpacks": [
