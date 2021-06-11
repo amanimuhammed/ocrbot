@@ -1,3 +1,2 @@
 python-telegram-bot
 pytesseract
--f git+git://github.com/madmaze/pytesseract.git
