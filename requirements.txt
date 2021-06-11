@@ -1,4 +1,3 @@
 python-telegram-bot==12.1.0
 pytesseract
-tesseract
-requests
+git+https://github.com/heroku/heroku-buildpack-apt
