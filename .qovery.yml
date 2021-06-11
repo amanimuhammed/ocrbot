@@ -1,0 +1,11 @@
+---
+application:
+  name: "ocrbot"
+  project: "Ocrbot"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-ocrbot"
+  routes:
+  - application_name: "ocrbot"
+    paths:
+    - "/*"
