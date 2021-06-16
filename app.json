@@ -5,18 +5,11 @@
     "BOT_TOKEN": {
       "description": "You bot token",
       "value": ""
-  },
-    "TESSDATA_PREFIX": {
-      "description": "don't edit this",
-      "value": "/app/.apt/usr/share/tesseract-ocr/4.1.1/tessdata"
 }
   },
   "buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-apt"
-    },
-    {
-      "url": "https://github.com/samadii/heroku-buildpack-tesseract"
+      "url": "https://github.com/nonumpa/heroku-buildpack-tesseract"
     },
     {
       "url": "heroku/python"
