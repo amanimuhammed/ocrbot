@@ -1,6 +1,5 @@
 {
   "name": "OCR-Bot",
-  "stack": "heroku-18",
   "env": {
     "BOT_TOKEN": {
       "description": "You bot token",
