@@ -29,9 +29,6 @@ def start(update: Update, context: CallbackContext) -> None:
     update.message.reply_text(constants.welcome_text)
 
 
-def donate(update: Update, context: CallbackContext) -> None:
-    """Send a message when the command /help is issued."""
-    update.message.reply_text(constants.donate_text, parse_mode=ParseMode.MARKDOWN)
 
 
 def read_image(update: Update, context: CallbackContext) -> None:
@@ -43,7 +40,7 @@ def read_image(update: Update, context: CallbackContext) -> None:
         photo_file.download(img_name)
         output=pytesseract.image_to_string(Image.open(img_name))
         if output:
-            update.message.reply_text('`'+str(output)+'`\n\nImage to Text Generated using @imagereaderbot', parse_mode=ParseMode.MARKDOWN, reply_to_message_id = update.message.message_id)
+            update.message.reply_text('`'+str(output)+'`\n\nImage to Text Generated', parse_mode=ParseMode.MARKDOWN, reply_to_message_id = update.message.message_id)
         else:
             update.message.reply_text(constants.no_text_found)
     except Exception as e:
@@ -71,7 +68,6 @@ def main():
 
     # on different commands - answer in Telegram
     dispatcher.add_handler(CommandHandler("start", start))
-    dispatcher.add_handler(CommandHandler("donate", donate))
 
     # on noncommand i.e message - echo the message on Telegram
     dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, reply_to_text_message))
