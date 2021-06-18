@@ -3,6 +3,8 @@
 # pylint: disable=W0613, C0116
 # type: ignore[union-attr]
 
+from boto.s3.connection import S3Connection
+s3 = S3Connection(os.environ['TESSERACT_OCR_LANGUAGES'])
 import logging
 from telegram import Update, ParseMode
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
