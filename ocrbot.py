@@ -3,6 +3,7 @@
 # pylint: disable=W0613, C0116
 # type: ignore[union-attr]
 
+import os
 from boto.s3.connection import S3Connection
 s3 = S3Connection(os.environ['TESSERACT_OCR_LANGUAGES'])
 import logging
