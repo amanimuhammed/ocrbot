@@ -40,7 +40,7 @@ def read_image(update: Update, context: CallbackContext) -> None:
         photo_file.download(img_name)
         output=pytesseract.image_to_string(Image.open(img_name))
         if output:
-            update.message.reply_text('`'+str(output)+'`\n\nImage to Text Generated', parse_mode=ParseMode.MARKDOWN, reply_to_message_id = update.message.message_id)
+            update.message.reply_text('`'+str(output)+'`\n\n', parse_mode=ParseMode.MARKDOWN, reply_to_message_id = update.message.message_id)
         else:
             update.message.reply_text(constants.no_text_found)
     except Exception as e:
